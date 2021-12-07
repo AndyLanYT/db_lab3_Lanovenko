@@ -47,7 +47,7 @@ with conn:
         p_count.append(row[1])
 
 
-    cur.execute('DROP VIEW IF EXISTS PoemPeriod')
+    cur.execute('DROP VIEW IF EXISTS PoemAuthor')
 
     cur.execute(query_2)
     cur.execute('SELECT * FROM PoemAuthor')
@@ -60,7 +60,7 @@ with conn:
         a_count.append(row[1])
     
 
-    cur.execute('DROP VIEW IF EXISTS PoemPeriod')
+    cur.execute('DROP VIEW IF EXISTS PoemGenre')
 
     cur.execute(query_3)
     cur.execute('SELECT * FROM PoemGenre')
